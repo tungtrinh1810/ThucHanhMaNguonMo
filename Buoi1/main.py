@@ -48,3 +48,14 @@ def solve_equation():
     except ValueError:
         messagebox.showerror("Lỗi", "Lỗi: Hệ phương trình không hợp lệ.")
 
+#Thiet ke giao dien
+root = Tk()
+root.title('Giai he phuong trinh tuyen tinh n an')
+root.geometry('200x100')
+root.attributes('-topmost', True)
+root['bg'] = 'Yellow'
+
+button = Button(root, text ="Giai he phuong trinh", command=solve_equation)
+button.place(x=40, y=30)
+
+root.mainloop()
